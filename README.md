@@ -26,7 +26,7 @@ To build the churn prediction model, we trained and evaluated several classifica
 
 Model performance was evaluated using key metrics, including accuracy, ROC-AUC, and F1 score. Hyperparameter tuning aimed to achieve a ROC-AUC above 0.75. The best-performing classifier (XGBoost) was selected to reliably predict customer churn for Interconnect.
 
-Finally, the selected model was used to build a web application using Streamlit and deployoed on Render, following principles of machine learning system design.
+Finally, the selected model was used to build a web application using Streamlit UI and deployoed on Render, following principles of machine learning system design.
 
 ---
 
@@ -44,8 +44,6 @@ Models were trained using cross-validation and hyperparameter tuning (GridSearch
 | XGBClassifier         | Test       | 0.8488  | 0.8829  | 0.6816   |
 
 **Best Model:** XGBoost with hyperparameter tuning (ROC-AUC: 0.8829).
-
-![Alt text](images/roc_auc.png)
 
 ---
 
@@ -73,12 +71,7 @@ churn-prediction-app/
 │
 ├── artifacts/                  
 │   ├── model_pipeline.joblib   
-│   └── model_metadata.json     
-│
-├── images/                     
-│   ├── roc_auc_xgboost.png     
-│   ├── app_dashboard_1.png     
-│   └── app_dashboard_2.png     
+│   └── model_metadata.json         
 │
 └── .gitignore                  
 ```
