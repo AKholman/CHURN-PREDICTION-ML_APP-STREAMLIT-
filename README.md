@@ -34,16 +34,17 @@ Finally, the selected model was used to build a web application using Streamlit 
 
 Models were trained using cross-validation and hyperparameter tuning (GridSearchCV). Performance metrics:
 
-| Model                 | Dataset    | Accuracy | ROC-AUC | F1 Score |
-|-----------------------|------------|---------|---------|----------|
-| LogisticRegression    | Validation | 0.7360  | 0.8204  | 0.5903   |
-| RandomForestClassifier| Validation | 0.7821  | 0.8482  | 0.6119   |
-| LightGBMClassifier    | Validation | 0.8034  | 0.8797  | 0.6593   |
-| XGBClassifier         | Validation | 0.8474  | 0.8724  | 0.6646   |
-| CatboostClassifier    | Validation | 0.8417  | 0.8663  | 0.6443   |
-| XGBClassifier         | Test       | 0.8488  | 0.8829  | 0.6816   |
 
-**Best Model:** XGBoost with hyperparameter tuning (ROC-AUC: 0.8829).
+| Model                   | Dataset      | Accuracy | ROC-AUC  | F1 Score |
+|-------------------------|--------------|----------|----------|----------|
+| LogisticRegression      |  validation  |  0.7580  |  0.8508  |  0.6368  |
+| RandomForestClassifier  |  validation  |  0.8133  |  0.8751  |  0.6741  |
+| LightGBMClassifier      |  validation  |  0.8297  |  0.9078  |  0.7066  |
+| XGBClassifier           |  validation  |  0.8623  |  0.9118  |  0.7069  |
+| CatboostClassifier      |  validation  |  0.8602  |  0.9106  |  0.7020  |
+| XGBClassifier           |     test     |  0.8581  |  0.8953  |  0.7059  |
+
+**Best Model:** XGBoost with hyperparameter tuning (ROC-AUC: 0.8953).
 
 ---
 
@@ -76,9 +77,6 @@ churn-prediction-app/
 └── .gitignore                  
 ```
 
-
-![App Screenshot](images/app_dashboard_1.png)
-![App Screenshot](images/app_dashboard_2.png)
 
 **Live App URL:** [https://churn-prediction-with-deployment-on.onrender.com]
 ⚠️ This app is deployed on Render free tier. It may be paused to save resources. Please contact me if you’d like me to reactivate it.
