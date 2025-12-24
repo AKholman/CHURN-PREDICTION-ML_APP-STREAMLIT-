@@ -46,6 +46,8 @@ Models were trained using cross-validation and hyperparameter tuning (GridSearch
 
 **Best Model:** XGBoost with hyperparameter tuning (ROC-AUC: 0.8953).
 
+![ROC_AUC curve for XGBoost](images/roc_auc_curve.png)
+
 ---
 
 ## Deployment
