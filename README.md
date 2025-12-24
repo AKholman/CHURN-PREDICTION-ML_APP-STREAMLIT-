@@ -78,6 +78,6 @@ churn-prediction-app/
 ```
 
 
-**Live App URL:** [https://churn-prediction-with-deployment-on.onrender.com]
+**Live App URL:** [https://churn-prediction-ml-app-streamlit.onrender.com]
 ⚠️ This app is deployed on Render free tier. It may be paused to save resources. Please contact me if you’d like me to reactivate it.
 
